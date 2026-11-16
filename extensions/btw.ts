@@ -230,7 +230,7 @@ async function runSideCall(
 					const lines: string[] = [];
 					lines.push(theme.fg("accent", "─ btw ─ Esc 中止 ─"));
 					const body = latest || "…";
-					for (const raw of body.split("\n")) for (const w of wrapLine(raw, Math.max(8, width - 2))) lines.push(theme.fg("accent", ` ${w}`));
+					for (const raw of body.split("\n")) for (const w of wrapLine(raw, Math.max(8, width - 2))) lines.push(` ${w}`);
 					const maxRows = Math.max(6, (tui?.terminalRows ?? 30) - 6);
 					return lines.slice(-maxRows);
 				},
@@ -490,7 +490,7 @@ export default function btwExtension(pi: ExtensionAPI) {
 		const lines: string[] = [];
 		lines.push(theme.fg("accent", `btw[${d.mode}] ${d.q}`));
 		for (const raw of String(d.a ?? "").split("\n")) {
-			for (const w of wrapLine(raw, Math.max(20, (options?.width ?? 100) - 4))) lines.push(theme.fg("accent", `  ${w}`));
+			for (const w of wrapLine(raw, Math.max(20, (options?.width ?? 100) - 4))) lines.push(`  ${w}`);
 		}
 		return new Text(lines.join("\n"), options?.outputPad ?? 0, 0);
 	});

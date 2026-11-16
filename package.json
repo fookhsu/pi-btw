@@ -18,6 +18,14 @@
   ],
   "author": "fookhsu",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fookhsu/pi-btw.git"
+  },
+  "homepage": "https://github.com/fookhsu/pi-btw#readme",
+  "bugs": {
+    "url": "https://github.com/fookhsu/pi-btw/issues"
+  },
   "peerDependencies": {
     "@earendil-works/pi-coding-agent": ">=1.5.0 <2",
     "@earendil-works/pi-tui": ">=1.5.0 <2"
@@ -32,6 +40,7 @@
     ],
     "skills": [
       "./skills"
-    ]
+    ],
+    "image": "https://raw.githubusercontent.com/fookhsu/pi-btw/main/docs/btw.gif"
   }
 }
