@@ -1,6 +1,6 @@
 {
   "name": "@fookhsu/pi-btw",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "btw — side-question channel for pi: persistent threads, configurable model/thinking, auto notes",
   "type": "module",
   "main": "extensions/btw.ts",
