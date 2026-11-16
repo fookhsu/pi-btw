@@ -4,7 +4,7 @@ pi 的侧问通道：主 agent 忙着干活时，`/btw` 一句插入，答案不
 
 竞品调研见 [RESEARCH.md](./RESEARCH.md)。基于调研取中道：真线程可追问（dbachelder 式体验），但无工具、单文件实现（pandi 式克制）。
 
-![btw demo](docs/btw-demo.gif)
+![btw demo](docs/btw-demo-v2.gif)
 
 ## 命令
 
