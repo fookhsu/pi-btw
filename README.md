@@ -51,4 +51,4 @@ pi 的侧问通道：主 agent 忙着干活时，`/btw` 一句插入，答案不
 pi -e /Users/hsu/workspace/pi-btw        # 或已全局安装（链接），改完 /reload 即生效
 ```
 
-无头测试（RPC 驱动）：`pi --mode rpc --no-session -e ./extensions/btw.ts`，发 `{"type":"prompt","message":"/btw ..."}` 观察 `entry_appended` 与 `extension_ui_request`。
+无头测试（RPC 驱动）：`pi --mode rpc --no-session -e ./extensions/index.ts`，发 `{"type":"prompt","message":"/btw ..."}` 观察 `entry_appended` 与 `extension_ui_request`。
